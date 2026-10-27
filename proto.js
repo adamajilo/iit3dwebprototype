@@ -1,27 +1,4 @@
-/* ==========================================================================
- * ROADMAP & TODO GOALS (Sprint Timeline: 2-3 Weeks)
- * ==========================================================================
- * [ ] WEEK 1: Three.js Foundations & Asset Pipeline
- *     - Finish setting up the Three.js viewport and responsive canvas resize.
- *     - Stop using primitive box/cylinder meshes; export actual Blender/CAD 
- *       models (.glb) for the Formula SAE car components.
- *     - Optimize polygon counts so mobile phones don't melt running WebGL.
- * 
- * [ ] WEEK 2: Apple-Style Parallax & Scroll Controls
- *     - Study Apple's product page source code (Mac Pro / Pro Display XDR) 
- *       to reverse-engineer how they scrub 3D animations using scroll position.
- *     - Hook GSAP ScrollTrigger to camera positions so scrolling down the 
- *       page rotates the car and explodes the subteam parts outward.
- *     - Add smooth lerp (linear interpolation) to camera damping so movements 
- *       feel weighted and expensive, not jittery.
- * 
- * [ ] WEEK 3: UI Polish, Performance & WordPress Integration
- *     - Build custom raycasting so users can click directly on the 3D car 
- *       parts (e.g., clicking the front wing opens Suspension) instead of 
- *       just relying on HTML nav buttons.
- *     - Test frame rates (aiming for a locked 60 FPS on both desktop and mobile).
- *     - Clean up build files, bundle via Vite, and embed/enqueue into WordPress.
- * ========================================================================== */
+
 
 function switchTeam(teamName) {
     console.log("Switching view to: " + teamName);
