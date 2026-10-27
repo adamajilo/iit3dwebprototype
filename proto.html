@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Motorsports - Prototype</title>
+    <!-- basic stylesheet link  -->
+    <link rel="stylesheet" href="proto.css">
+</head>
+<body>
+
+    <!-- wrapper cause wordpress is weird -->
+    <div class="fsae-embed-container">
+        
+        <header>
+            <h1>IIT Motorsports - Subteams Prototype</h1>
+            <p>Day 1 Draft: Testing layout and button toggles</p>
+        </header>
+
+        <!-- navigation buttons for subteams -->
+        <div class="nav-container">
+            <button onclick="switchTeam('chassis')" class="btn active">Chassis</button>
+            <button onclick="switchTeam('electronics')" class="btn">Electronics</button>
+            <button onclick="switchTeam('suspension')" class="btn">Suspension</button>
+            <button onclick="switchTeam('powertrain')" class="btn">Powertrain</button>
+            <button onclick="switchTeam('business')" class="btn">Business</button>
+        </div>
+
+        <!-- main display card for team info -->
+        <main class="card">
+            <h2 id="team-title">Chassis</h2>
+            <p id="team-desc">Responsible for the design and fabrication of the main structural component of the vehicle. Engineers must prove their design meets strict safety and performance metrics, while minimizing the weight.</p>
+            <a href="https://iitmotorsports.org/our-team/" id="team-link" target="_blank">Meet Our Team &rarr;</a>
+        </main>
+
+    </div>
+
+    <!-- hook up our prototype JS script -->
+    <script src="proto.js"></script>
+</body>
+</html>
