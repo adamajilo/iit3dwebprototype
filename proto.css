@@ -80,7 +80,7 @@ header p {
     background-color: #333;
 }
 
-/* Active button state */
+/* active button state */
 .btn.active {
     background-color: #ff3b3b;
     border-color: #ff3b3b;
