@@ -6,6 +6,14 @@
     <title>IIT Motorsports - Prototype</title>
     <!-- basic stylesheet link  -->
     <link rel="stylesheet" href="proto.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+      </script>
 </head>
 <body>
 
@@ -14,7 +22,7 @@
         
         <header>
             <h1>IIT Motorsports - Subteams Prototype</h1>
-            <p>Day 1 Draft: Testing layout and button toggles</p>
+            <p>3d implementation trial + camera test</p>
         </header>
 
         <!-- navigation buttons for subteams -->
@@ -26,6 +34,13 @@
             <button onclick="switchTeam('business')" class="btn">Business</button>
         </div>
 
+        <!-- side by side layout -->
+         <div class="viewer-layout">
+            <!-- threejs viewer -->
+            <div id="webgl-container"></div>
+         </div>
+
+
         <!-- main display card for team info -->
         <main class="card">
             <h2 id="team-title">Chassis</h2>
@@ -36,6 +51,6 @@
     </div>
 
     <!-- hook up our prototype JS script -->
-    <script src="proto.js"></script>
+    <script type="module" src="proto.js"></script>
 </body>
 </html>
