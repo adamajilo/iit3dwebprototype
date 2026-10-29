@@ -1,5 +1,3 @@
-
-
 function switchTeam(teamName) {
     console.log("Switching view to: " + teamName);
 
