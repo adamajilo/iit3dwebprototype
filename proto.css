@@ -1,26 +1,9 @@
-/* wordpress container wrapper */
-.fsae-embed-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 520px;
-    background-color: #121212;
-    border: 1px solid #333;
-    border-radius: 12px;
-    overflow-y: auto;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    margin: 0 auto;
-}
-
 /* basic reset & dark garage vibe */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -33,7 +16,29 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
+
 }
+
+/* wordpress container wrapper */
+.fsae-embed-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    min-height: 580px;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    margin: 0 auto;
+}
+
+
 
 header {
     text-align: center;
@@ -81,7 +86,27 @@ header p {
     border-color: #ff3b3b;
 }
 
-/* Prototype Info Card */
+/*side by side*/
+.viewer-layout {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 3D viewport box */
+#webgl-container {
+    width: 480px;
+    height: 340px;
+    background-color: #050505;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*  info Card */
 .card {
     background-color: #1a1a1a;
     border: 1px solid #333;
@@ -101,6 +126,7 @@ header p {
     line-height: 1.6;
     margin-bottom: 20px;
     color: #ccc;
+    font-size: 0.95rem;
 }
 
 .card a {
